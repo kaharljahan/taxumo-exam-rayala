@@ -1,0 +1,14 @@
+
+<textarea class="form-control" rows="5" name="numinput" #numinput id="numinput">{{pholder}}</textarea>
+
+<br>
+<button type="button" class="btn btn-secondary btn-lg" (click)="calculateAnswer(numinput.value)">Find the diagonal difference</button>
+<br>
+
+<h2>{{answerLabel}}</h2>
+
+
+<h6>{{primaryDiag}}</h6>
+<h6>{{secondaryDiag}}</h6>
+
+<h4>{{diagDifOutput}}</h4>

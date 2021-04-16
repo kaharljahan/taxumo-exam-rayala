@@ -1,0 +1,12 @@
+
+<textarea class="form-control" rows="5" name="numinput" #numinput id="numinput">{{pholder}}</textarea>
+
+<br>
+<button type="button" class="btn btn-secondary btn-lg" (click)="calculateAnswer(numinput.value)">Compute the running time</button>
+<br>
+
+<h2>{{answerLabel}}</h2>
+
+<h4>{{runtimeOutput}}</h4>
+
+<textarea class="form-control" rows="5" readonly>{{rtDetails}}</textarea>

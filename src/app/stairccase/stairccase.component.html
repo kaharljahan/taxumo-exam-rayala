@@ -1,0 +1,8 @@
+<input class="form-control form-control-lg" type="number" name="numinput" #numinput id="numinput" placeholder="Turn a number into a '#' staircase!" min="1" oninput="validity.valid||(value='');">
+
+<br>
+<button type="button" class="btn btn-secondary btn-lg" (click)="showAnswer(numinput.value)">Draw the staircase</button>
+<br>
+
+<h2>{{stairLabel}}</h2>
+<textarea class="form-control" rows={{stairNum}} readonly>{{stairOutput}}</textarea>
